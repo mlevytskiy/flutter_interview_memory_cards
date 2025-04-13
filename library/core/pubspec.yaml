@@ -1,0 +1,42 @@
+name: core
+description: Main part of flutter interview memory cards. Independed from any platform
+version: 1.0.0
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.1
+  auto_injector: ^2.0.5
+  go_router: ^14.3.0
+  go_router_paths: ^0.2.2
+  animated_theme_switcher: ^2.0.10
+  json_annotation: ^4.9.0
+  equatable: ^2.0.5
+  flutter_bloc_side_effect: ^0.0.2
+  conditional_wrap: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.11
+  json_serializable: ^6.8.0
+  asset_fill: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets: []
+  fonts:
+    - family: SF
+      fonts:
+        - asset: assets/SFUIDisplay-Medium.ttf
+    - family: SF Light
+      fonts:
+        - asset: assets/SFUIDisplay-Light.ttf
+    - family: Harry
+      fonts:
+        - asset: assets/harry_potter.ttf
