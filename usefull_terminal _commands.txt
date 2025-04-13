@@ -6,7 +6,7 @@ In library 'core' I can use 'fgen' command generate R class from assets
 
 ---/// How to publish(host) web version on github ///---
 cd app_web;
-flutter build web --release --base-href=/quizland_calculator/
+flutter build web --release --base-href=/flutter_interview_memory_cards/
 //git commit here (usually I do it via android studio)
 cd ..
 git subtree split -P release -b web_release
