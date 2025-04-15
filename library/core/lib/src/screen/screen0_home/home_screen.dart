@@ -1,3 +1,4 @@
+import 'package:core/src/screen/screen0_home/widget/memory_cards.dart';
 import 'package:core/src/screen/screen0_home/widget/nav_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +8,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
+      drawer: const NavDrawer(),
       appBar: AppBar(
-        title: const Text('Side menu'),
+        title: const Text('Flutter interview cards'),
       ),
-      body: const Center(
-        child: Text('Home'),
-      ),
+      body: const MemoryCards(),
     );
   }
 }

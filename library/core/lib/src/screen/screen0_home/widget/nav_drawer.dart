@@ -3,6 +3,7 @@ import 'package:core/src/app/widget_extension/assets.dart';
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
+  const NavDrawer({super.key});
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -10,34 +11,14 @@ class NavDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           DrawerHeader(
-            child: const SizedBox(),
             decoration: BoxDecoration(
                 color: Colors.green,
                 image: DecorationImage(fit: BoxFit.fill, image: R.ASSETS_SIDE_MENU_HEADER_PNG.imageAsset2())),
+            child: const SizedBox(),
           ),
           ListTile(
-            leading: Icon(Icons.input),
-            title: Text('Welcome'),
-            onTap: () => {},
-          ),
-          ListTile(
-            leading: Icon(Icons.verified_user),
-            title: Text('Profile'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
+            leading: const Icon(Icons.verified_user),
+            title: const Text('Flutter interview cards'),
             onTap: () => {Navigator.of(context).pop()},
           ),
         ],
